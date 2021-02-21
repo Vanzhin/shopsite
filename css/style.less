@@ -940,12 +940,17 @@ slider-content::before {
     height: 280px;
     background-color: #e9e9e9;
     background-repeat: no-repeat;
+    position: relative;
+}
+.featured-items-ul .featured-items-img img{
+    position: absolute;
+    
 }
 
-.featured-items-img1 {
-    background-image: url(../img/rectangle_5_copy_1193.png);
-    background-position: center;
-}
+//.featured-items-img1 {
+//    background-image: url(../img/rectangle_5_copy_1193.png);
+//    background-position: center;
+//}
 
 .featured-items-img2 {
     background-image: url(../img/rectangle_5_copy_1201.png);
@@ -991,6 +996,7 @@ slider-content::before {
     height: 100%;
     opacity: 0;
     transition: 0.3s;
+    position: absolute;
 
     .featured-items-hidden-link {
         min-width: 123px;
