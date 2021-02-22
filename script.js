@@ -44,8 +44,7 @@ const goods = [{
 	},
 
 ];
-const getGoodsLayout = (title, price, pictureLink) => {
-	return `
+const getGoodsLayout = (title, price, pictureLink) => `
 	<li class="featured-items-list">
 	<div aria-label="Mango People T-shirt" class="featured-items-img">
 	   <img src="${pictureLink}" alt="${title}">
@@ -66,7 +65,6 @@ const getGoodsLayout = (title, price, pictureLink) => {
 	</a>
 </li>
     `;
-}
 
 const renderGoods = (list) => {
 	const goodsString = list.map(element =>
